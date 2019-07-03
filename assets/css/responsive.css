@@ -1,0 +1,23 @@
+@media screen and (max-width: 768px){
+    .main .main-container {
+        flex-direction: column;
+    }
+
+    .main .main-container .main-container-w60 {
+        width: 100%;
+    }
+
+    .main .main-container .main-container-w60 .main-container__row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1em 3em;
+    }
+    .main .main-container .main-container-w40 {
+        margin: 0 auto;
+        width: 60%;
+    }
+
+    
+
+}
