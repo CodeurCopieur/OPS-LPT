@@ -51,6 +51,7 @@
 
 .main .main-container .main-container-w60 .main-container__row .main-container__row-details-txt{
     padding: .5em 0em;
+    margin-bottom: 1em;
 }
 
 .main-container__row-details-link {
@@ -81,6 +82,8 @@
 .main-container__row-details-link {
     background: #ac0000;
     color: #fff;
+    padding: .25em;
+    margin-top: 1em;
 }
 
 .main .main-container .main-container-w40 {

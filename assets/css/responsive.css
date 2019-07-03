@@ -12,10 +12,31 @@
         flex-direction: column;
         align-items: center;
         padding: 1em 3em;
+        margin: 0em 2em;
     }
+
+    .main-container__row-details-ttl-4 {
+        padding: 1em 0em;;
+    }
+
     .main .main-container .main-container-w40 {
         margin: 0 auto;
         width: 60%;
+    }
+
+    
+
+}
+
+@media screen and (min-width: 768px){
+
+
+    .main .main-container .main-container-w60 .main-container__row {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 1em 0em;
+        margin: 0em;
     }
 
     
