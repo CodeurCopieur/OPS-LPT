@@ -33,7 +33,7 @@
 .main .main-container {
     display: flex;
     justify-content: space-between;
-    padding: 1em 0em;
+    padding: 1em .5em;
 }
 
 .main .main-container .main-container-w60 {
@@ -92,3 +92,34 @@
 }
 
 /* MAIN */
+
+/* MAIN ACTUALITES */
+
+.main-actualites__container-ttl-2 {
+    text-align: center;
+    color: #ac0000;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 1.25em;
+    margin: 2em 0;
+}
+ 
+
+.main-actualites__columns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.main-actualite__column  {
+    min-width: 25%;
+}
+
+.main-actualite__column-link-img {
+    text-align: center;
+}
+
+
+
+/* MAIN ACTUALITES */
