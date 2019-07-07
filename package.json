@@ -1,5 +1,6 @@
 {
   "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.9.0",
     "reset-css": "^4.0.1"
   }
 }
