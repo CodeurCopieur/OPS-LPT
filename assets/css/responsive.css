@@ -24,6 +24,9 @@
         width: 60%;
     }
 
+    .main-actualite__column-img {
+        width: 160px;
+    }
     
 
 }
@@ -47,6 +50,8 @@
     .main-actualite__column{
       min-width: 45%;
     }
+
+
   }
   /*
   @media screen and (max-width: 768px){
