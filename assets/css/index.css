@@ -2,11 +2,20 @@
 
 .hdr .hdr-container-red {
     background:#ac0000a4;
-    display: flex;
-    justify-content: center;
-    padding: .5em 0em;
-
+    display: grid;
+    grid-template-columns: 1.5fr 2fr;
+    padding: .5em;
 }
+
+.hdr .hdr-container-red a:nth-child(1){
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+    padding-right: 1em
+}
+
 
 .hdr .hdr-container-red-2 {
     display: flex;
@@ -23,6 +32,138 @@
 }
 
 /* HEADER */
+
+/*  SLIDER  */
+
+.main-container__slider .main-container__slider-articles .main-container__slider-articles-row{
+   width: 100%;
+   overflow: hidden;
+}
+
+.main-container__slider-img{
+    overflow: hidden;
+    display: block;
+}
+
+.main-container__slider .main-container__slider-articles .main-container__slider-articles-row .main-container__slider-articles-row-link {
+    position: relative;
+}
+
+.main-container__slider .main-container__slider-articles .main-container__slider-articles-row .main-container__slider-articles-row-link .main-container__slider-articles-row-infos {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    text-align: center;
+}
+
+.main-container__slider .main-container__slider-articles .main-container__slider-articles-row .main-container__slider-articles-row-link .main-container__slider-articles-row-infos .main-container__slider-details-txt-4,.main-container__slider-details-ttl-2 {
+    color: #fff;
+    padding: 1em 0;
+    
+} 
+
+.main-container__slider .main-container__slider-articles .main-container__slider-articles-row .main-container__slider-articles-row-link .main-container__slider-articles-row-infos .main-container__slider-details-txt-4 {
+    font-size: 1em
+} 
+
+.main-container__slider .main-container__slider-articles .main-container__slider-articles-row .main-container__slider-articles-row-link .main-container__slider-articles-row-infos .main-container__slider-details-ttl-2 {
+    font-size: 2em
+} 
+
+.main-container__slider .main-container__slider-controls .main-container__slider-controls-left, .main-container__slider-controls-right {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 25px;
+    height: 25px;
+    padding: 16px;
+    color: #fff;
+    border-radius: 50%;
+    background: #ac0000a4;
+    z-index: 1;
+    cursor: pointer;
+    transition: all .5s ease;
+    display: flex;
+    justify-content: center;
+    user-select: none;
+    text-decoration: none;
+    align-items: center;
+}
+
+.main-container__slider .main-container__slider-controls i {
+    font-size: 20px;
+}
+
+.main-container__slider-controls-right{
+    right: 0;
+}
+
+.main-container__slider-controls-left:hover, .main-container__slider-controls-right:hover{
+    background:#ac0000 !important;
+}
+
+.main-container__slider-pages {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);  
+    cursor: pointer;
+    
+}
+
+.main-container__slider-pages-puce {
+    height: 10px;
+    width: 10px;
+    background:#ac0000;
+    margin:0 5px;
+    transition: all .5s ease-in;
+}
+
+.active, .main-container__slider-pages-puce:hover {
+    background: #ac0000a4;
+}
+
+.main-container__slider-articles-2 {
+    max-width: 970px;
+    margin: 0 auto;
+    padding: 1em .5em;
+    display: flex;
+}
+
+.main-container__slider-articles-details {
+    width: calc(100%/3);
+    text-align: center;
+}
+.main-container__slider-articlesdetails-ttl-4 {
+    padding: 1em 0;
+    color: #ac0000;
+
+}
+
+.main-container__slider-articles-details-link-article {
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #ac0000;
+    text-decoration: underline;
+}
+
+.main-container__slider-articles-details-ttl-2::after {
+    content: '';
+    background: #ac0000;
+    width: 29px;
+    height: 2px;
+    display: block;
+    margin: 20px auto;
+}
+.active-2 {
+    border: 2px solid #ac0000;
+}
+
+/*  SLIDER  */
 
 /* MAIN */
 
@@ -123,11 +264,6 @@
 
 .main-actualite__column-link-img {
     text-align: center;
-}
-
-
-.main-actualite__row-details {
-
 }
 
 .main-actualite__column .main-actualite__row-details .main-actualite__row-details-ttl-4 {

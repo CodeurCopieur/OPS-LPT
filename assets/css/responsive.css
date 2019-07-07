@@ -27,8 +27,12 @@
     .main-actualite__column-img {
         width: 160px;
     }
-    
-
+    .main-container__slider-articles-2 {
+        flex-direction: column;
+    }
+    .main-container__slider-articles-details {
+        width: 100%;
+    }
 }
 
 @media screen and (min-width: 768px){

@@ -19,22 +19,142 @@
     
     <link rel="stylesheet" href="assets/css/index.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
-
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
 </head>
 <body>
 
     <header class="hdr">
         <div class="hdr-container-red">
             <a href="#" target="_blank">
-               <img src="https://static.lpnt.fr/static/img/logo/logo-lepoint-supp-part.svg" width="300" height="39" alt="Logo Le Point : Supplément partenaire" class="lp-supp-partenaire-logo">
+                <i class="fas fa-home"></i>&nbsp; retour au site
             </a>
+            <a href="#" target="_blank">
+                <img src="https://static.lpnt.fr/static/img/logo/logo-lepoint-supp-part.svg" width="300" height="39" alt="Logo Le Point : Supplément partenaire" class="lp-supp-partenaire-logo">
+             </a>
         </div>
         <div class="hdr-container-red-2">
             <span>présente</span>
             <!--<a href="https://bit.ly/2LxRjfC"><img src="assets/img/milleis.png" width="234" height="89" alt=""></a>-->
         </div>
     </header>
+    
+<!-- SLIDER -->
+
+    <section class="main-container__slider">
+        <div class="main-container__slider-controls">
+                <a onclick="newSlide(-1)" class="main-container__slider-controls-left"><i class="fas fa-angle-left"></i></a>
+                <a onclick="newSlide(1)" class="main-container__slider-controls-right"><i class="fas fa-angle-right"></i></a>
+        </div>
+            
+
+        <div class="main-container__slider-articles">
+            <div class="main-container__slider-articles-row">
+
+                <div class="container-slide main-container__slider-articles-row-link">
+                    <a href="" class="">
+                        <img src="assets/img/Europe-du-nord-1920x570.jpg" class="main-container__slider-img" alt="">      
+                        <div class="main-container__slider-articles-row-infos">
+                            <span class="main-container__slider-details-txt-4">
+                                    Lorem, ipsum1
+                            </span>
+                            <h2 class="main-container__slider-details-ttl-2">
+                                            Lorem ipsum : dolor sit1
+                            </h2>  
+                        </div>
+                    </a>
+                </div>
+                <div class="container-slide main-container__slider-articles-row-link">
+                    <a href="" class="">
+                        <img src="assets/img/Europe-du-nord-1920x570.jpg" class="main-container__slider-img" alt="">      
+                        <div class="main-container__slider-articles-row-infos">
+                            <span class="main-container__slider-details-txt-4">
+                                    Lorem, ipsum2
+                            </span>
+                            <h2 class="main-container__slider-details-ttl-2">
+                                            Lorem ipsum : dolor sit2
+                            </h2>  
+                        </div>
+                    </a>
+                </div>
+                <div class="container-slide main-container__slider-articles-row-link">
+                    <a href="" class="">
+                        <img src="assets/img/Europe-du-nord-1920x570.jpg" class="main-container__slider-img" alt="">      
+                        <div class="main-container__slider-articles-row-infos">
+                            <span class="main-container__slider-details-txt-4">
+                                    Lorem, ipsum3
+                            </span>
+                            <h2 class="main-container__slider-details-ttl-2">
+                                            Lorem ipsum : dolor sit3
+                            </h2>  
+                        </div>
+                    </a>
+                </div>
+
+                
+
+            </div>
+        </div>
+
+        <div class="main-container__slider-pages">
+            <a onclick="currentSlide(1)" class="main-container__slider-pages-puce"></a>
+            <a onclick="currentSlide(2)" class="main-container__slider-pages-puce"></a>
+            <a onclick="currentSlide(3)" class="main-container__slider-pages-puce"></a>
+        </div>
+
+        <div class="main-container__slider-articles-2">
+            <article class="main-container__slider-articles-details">
+                <a href="#" class="main-container__row-link-img">
+                    <figure>
+                        <img src="assets/img/Europe-du-nord-227x99.jpg" alt="" class="main-container__row-img">
+                    </figure>
+                </a>
+                <h4 class="main-container__slider-articlesdetails-ttl-4">
+                    Lorem, ipsum
+                </h4>
+                <a href="#" class="main-container__slider-articles-details-link-article">
+                    <h2 class="main-container__slider-articles-details-ttl-2">
+                        Lorem ipsum : dolor sit
+                    </h2>
+                </a>
+            </article>
+            <article class="main-container__slider-articles-details">
+                    <a href="#" class="main-container__row-link-img">
+                        <figure>
+                            <img src="assets/img/Europe-du-nord-227x99.jpg" alt="" class="main-container__row-img">
+                        </figure>
+                    </a>
+                    <h4 class="main-container__slider-articlesdetails-ttl-4">
+                        Lorem, ipsum
+                    </h4>
+                    <a href="#" class="main-container__slider-articles-details-link-article">
+                        <h2 class="main-container__slider-articles-details-ttl-2">
+                            Lorem ipsum : dolor sit
+                        </h2>
+                    </a>
+            </article>
+            <article class="main-container__slider-articles-details">
+                    <a href="#" class="main-container__row-link-img">
+                        <figure>
+                            <img src="assets/img/Europe-du-nord-227x99.jpg" alt="" class="main-container__row-img">
+                        </figure>
+                    </a>
+                    <h4 class="main-container__slider-articlesdetails-ttl-4">
+                        Lorem, ipsum
+                    </h4>
+                    <a href="#" class="main-container__slider-articles-details-link-article">
+                        <h2 class="main-container__slider-articles-details-ttl-2">
+                            Lorem ipsum : dolor sit
+                        </h2>
+                    </a>
+            </article>
+        </div>
+
+    </section>
+
+<!-- SLIDER -->
     <main class="main">
+
+
         <section class="main-container">
             <div class="main-container-w60">
                 <article class="main-container__row">
@@ -195,6 +315,6 @@
             </ul>
         </div>
     </footer>
-    
+    <script src="assets/js/index.js"></script>
 </body>
 </html>
