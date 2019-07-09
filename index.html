@@ -42,10 +42,7 @@
 <!-- SLIDER -->
 
     <section class="main-container__slider">
-        <div class="main-container__slider-controls">
-                <a onclick="newSlide(-1)" class="main-container__slider-controls-left"><i class="fas fa-angle-left"></i></a>
-                <a onclick="newSlide(1)" class="main-container__slider-controls-right"><i class="fas fa-angle-right"></i></a>
-        </div>
+        
             
 
         <div class="main-container__slider-articles">
@@ -94,13 +91,18 @@
                 
 
             </div>
+            <div class="main-container__slider-controls">
+                <a onclick="newSlide(-1)" class="main-container__slider-controls-left"><i class="fas fa-angle-left"></i></a>
+                <a onclick="newSlide(1)" class="main-container__slider-controls-right"><i class="fas fa-angle-right"></i></a>
+        </div>
+            <div class="main-container__slider-pages">
+                <a onclick="currentSlide(1)" class="main-container__slider-pages-puce"></a>
+                <a onclick="currentSlide(2)" class="main-container__slider-pages-puce"></a>
+                <a onclick="currentSlide(3)" class="main-container__slider-pages-puce"></a>
+            </div>
         </div>
 
-        <div class="main-container__slider-pages">
-            <a onclick="currentSlide(1)" class="main-container__slider-pages-puce"></a>
-            <a onclick="currentSlide(2)" class="main-container__slider-pages-puce"></a>
-            <a onclick="currentSlide(3)" class="main-container__slider-pages-puce"></a>
-        </div>
+        
 
         <div class="main-container__slider-articles-2">
             <article class="main-container__slider-articles-details">

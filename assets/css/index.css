@@ -38,6 +38,9 @@ body {
 /* HEADER */
 
 /*  SLIDER  */
+.main-container__slider-articles {
+    position: relative;
+}
 
 .main-container__slider .main-container__slider-articles .main-container__slider-articles-row{
    width: 100%;
@@ -112,7 +115,7 @@ body {
     justify-content: center;
     padding: 30px;
     position: absolute;
-    bottom: 50px;
+    bottom: 0;
     left: 50%;
     transform: translateX(-50%);  
     cursor: pointer;
